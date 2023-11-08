@@ -24,7 +24,7 @@ erDiagram
         string unit
         float quantity
     }
-    materialItem {
+    material {
         guid id
         string name
         string preferredVendor
