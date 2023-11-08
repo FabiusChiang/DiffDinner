@@ -10,22 +10,22 @@ erDiagram
     meal }o..|{ cuisine : contains
 
     meal {
-        guid id
+        uuid id
         string timeType
         date servedDate
     }
     cuisine {
-        guid id
+        uuid id
         string name
     }
     materialItem {
-        guid cuisineId
-        guid materialId
+        uuid cuisineId
+        uuid materialId
         string unit
         float quantity
     }
     material {
-        guid id
+        uuid id
         string name
         string preferredVendor
     }
