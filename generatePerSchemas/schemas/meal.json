@@ -1,0 +1,29 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string",
+            "format": "uuid"
+        },
+        "servedDate": {
+            "type": "string"
+        },
+        "timeType": {
+            "type": "string",
+            "enum": ["breakfast", "lunch", "dinner", "afternoon-tea", "snacks"]
+        },
+        "cuisines_id": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "required": [
+        "id",
+        "servedDate",
+        "timeType",
+        "cuisines_id"
+    ],
+    "additionalProperties": false
+}

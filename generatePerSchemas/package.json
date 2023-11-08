@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "generate": "json2ts --version",
-    "test": "json2ts ../schemas/cuisine.json output/cuisine.d.ts"
+    "generate": "node index.js",
+    "test": "json2ts ./schemas/cuisine.json output/cuisine.d.ts",
+    "test1": "json2ts ./schemas/meal.json output/meal.d.ts --declareExternallyReferenced false"
   },
   "author": "",
   "license": "ISC",
