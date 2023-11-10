@@ -1,17 +1,21 @@
 {
-  "name": "generateperschemas",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@fabiuschiang/diff-dinner-entity",
+  "version": "0.0.3",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "generate": "node index.js",
+    "build": "node build.js",
     "test": "json2ts ./schemas/cuisine.json output/cuisine.d.ts",
     "test1": "json2ts ./schemas/meal.json output/meal.d.ts --declareExternallyReferenced false"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "json-schema-to-typescript": "^13.1.1"
-  }
+  },
+  "description": "",
+  "files": [
+    "/types",
+    "/schemas"
+  ]
 }

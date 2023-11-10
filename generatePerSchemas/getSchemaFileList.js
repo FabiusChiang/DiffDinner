@@ -7,7 +7,7 @@ const result = files.map(fName => {
         jsonFileName: fName,
         tsFileName: splitedName[0] + '.d.ts',
         inputFolderName: './schemas/',
-        outputFolderName: './output/'
+        outputFolderName: './types/'
     }
 });
 
