@@ -1,21 +1,31 @@
 {
   "name": "@fabiuschiang/diff-dinner-entity",
-  "version": "0.0.3",
-  "main": "index.js",
-  "type": "module",
+  "version": "0.0.9",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+
   "scripts": {
     "build": "node build.js",
+    "pack": "rollup -c --bundleConfigAsCjs",
     "test": "json2ts ./schemas/cuisine.json output/cuisine.d.ts",
     "test1": "json2ts ./schemas/meal.json output/meal.d.ts --declareExternallyReferenced false"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "json-schema-to-typescript": "^13.1.1"
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "json-schema-to-typescript": "^13.1.1",
+    "rollup": "^4.3.0",
+    "rollup-plugin-dts": "^6.1.0",
+    "tslib": "^2.6.2"
   },
   "description": "",
   "files": [
     "/types",
+    "/dist",
     "/schemas"
   ]
 }

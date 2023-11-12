@@ -2,6 +2,12 @@
 Create different meals for every family
 
 
+## Notes:
+build.js need type: module;
+then build and publish the lib;
+consumer of the lib needs to be type: module;
+
+
 ## Entity-Relationship diagram
 ```mermaid
 erDiagram

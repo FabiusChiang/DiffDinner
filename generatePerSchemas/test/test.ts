@@ -1,4 +1,4 @@
-import { Cuisine } from "../index";
+import { Cuisine, func1 } from "../dist/esm/types/index.d";
 
 const c1: Cuisine = {
     id: "uuid123",
@@ -6,3 +6,6 @@ const c1: Cuisine = {
 };
 
 console.log(c1);
+
+const n2: number = func1(1, 2);
+console.log(n2);

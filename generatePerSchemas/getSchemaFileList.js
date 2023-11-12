@@ -5,7 +5,7 @@ const result = files.map(fName => {
     const splitedName = fName.split('.');
     return {
         jsonFileName: fName,
-        tsFileName: splitedName[0] + '.d.ts',
+        tsFileName: splitedName[0] + '.ts',
         inputFolderName: './schemas/',
         outputFolderName: './types/'
     }
