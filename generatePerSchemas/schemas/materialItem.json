@@ -1,0 +1,26 @@
+{
+    "type": "object",
+    "properties": {
+        "cuisineId": {
+            "type": "string",
+            "format": "uuid"
+        },
+        "materialId": {
+            "type": "string",
+            "format": "uuid"
+        },
+        "unit": {
+            "type": "string"
+        },
+        "quantity": {
+            "type": "number"
+        }
+    },
+    "required": [
+        "cuisineId",
+        "name",
+        "unit",
+        "quantity"
+    ],
+    "additionalProperties": false
+}

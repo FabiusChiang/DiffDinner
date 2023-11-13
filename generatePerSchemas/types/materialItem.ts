@@ -5,8 +5,9 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export interface Material {
-  id: string;
-  name: string;
-  preferredVendor?: string;
+export interface MaterialItem {
+  cuisineId: string;
+  materialId?: string;
+  unit: string;
+  quantity: number;
 }

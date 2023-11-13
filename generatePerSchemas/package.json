@@ -1,15 +1,15 @@
 {
   "name": "@fabiuschiang/diff-dinner-entity",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
-
   "scripts": {
     "build": "node build.mjs",
     "pack": "rollup -c --bundleConfigAsCjs",
     "test": "json2ts ./schemas/cuisine.json output/cuisine.d.ts",
-    "test1": "json2ts ./schemas/meal.json output/meal.d.ts --declareExternallyReferenced false"
+    "pub": "npm version patch --force && npm publish",
+    "whole-pub": "npm run build && npm run pack && npm run pub"
   },
   "author": "",
   "license": "ISC",
