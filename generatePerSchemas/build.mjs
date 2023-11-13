@@ -1,5 +1,5 @@
 import { compileFromFile } from 'json-schema-to-typescript'
-import filesList from './getSchemaFileList.js';
+import filesList from './getSchemaFileList.mjs';
 import fs from 'fs';
 
 console.log(filesList);

@@ -1,12 +1,12 @@
 {
   "name": "@fabiuschiang/diff-dinner-entity",
-  "version": "0.0.9",
+  "version": "0.0.12",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
 
   "scripts": {
-    "build": "node build.js",
+    "build": "node build.mjs",
     "pack": "rollup -c --bundleConfigAsCjs",
     "test": "json2ts ./schemas/cuisine.json output/cuisine.d.ts",
     "test1": "json2ts ./schemas/meal.json output/meal.d.ts --declareExternallyReferenced false"

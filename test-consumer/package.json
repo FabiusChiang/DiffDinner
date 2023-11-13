@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "test": "ts-node index.ts"
+    "test": "ts-node --esm src/index.mts"
   },
   "author": "",
   "license": "ISC",
