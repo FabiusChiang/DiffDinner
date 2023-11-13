@@ -1,5 +1,5 @@
-export * from './types/cuisine';
-export * from './types/meal';
+export {Cuisine} from './types/cuisine';
+export {Meal} from './types/meal';
 
 function func1(a: number, b: number): number {
     return a + b;

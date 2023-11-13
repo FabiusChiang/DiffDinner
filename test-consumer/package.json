@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+
   "scripts": {
     "test": "ts-node --esm src/index.mts"
   },
@@ -12,6 +13,7 @@
     "@fabiuschiang/diff-dinner-entity": "^0.0"
   },
   "devDependencies": {
-    "ts-node": "^10.9.1"
+    "ts-node": "^10.9.1",
+    "tslib": "^2.6.2"
   }
 }
