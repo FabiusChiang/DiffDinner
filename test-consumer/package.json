@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@fabiuschiang/diff-dinner-entity": "^0.0"
+    "@fabiuschiang/diff-dinner-entity": "^0.0",
+    "tslib": "^2.6.2"
   },
   "devDependencies": {
     "ts-node": "^10.9.1",
