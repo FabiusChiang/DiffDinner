@@ -1,4 +1,4 @@
-import { Cuisine, func1 } from "../dist/esm/types/index.js";
+import { Cuisine, func1 } from "../index";
 
 const c1: Cuisine = {
     id: "uuid123",

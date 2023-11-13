@@ -8,3 +8,4 @@ filesList.forEach(element => {
     compileFromFile(element.inputFolderName + element.jsonFileName)
         .then(ts => fs.writeFileSync(element.outputFolderName + element.tsFileName, ts));
 });
+
